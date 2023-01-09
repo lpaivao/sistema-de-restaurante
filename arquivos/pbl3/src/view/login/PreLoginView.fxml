@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.login.PreLoginViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="25.0" prefHeight="66.0" prefWidth="336.0" text="Login:">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLoginGerente" layoutX="88.0" layoutY="131.0" mnemonicParsing="false" onAction="#onBtnLoginGerenteAction" prefHeight="0.0" prefWidth="336.0" text="Gerente">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLoginFuncionario" layoutX="88.0" layoutY="212.0" mnemonicParsing="false" onAction="#onBtnLoginFuncionarioAction" prefHeight="0.0" prefWidth="336.0" text="Funcionario">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane prefHeight="478.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.gerente.MenuGerenteViewController">
+   <content>
+      <TabPane prefHeight="472.0" prefWidth="785.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Clientes">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="438.0" prefWidth="785.0">
+                     <children>
+                        <Button fx:id="btnAddCliente" layoutX="6.0" layoutY="20.0" mnemonicParsing="false" onAction="#onBtnAddClienteAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Cliente" />
+                        <Button fx:id="btnRemoverCliente" layoutX="214.0" layoutY="20.0" mnemonicParsing="false" onAction="#onBtnRemoverClienteAction" prefHeight="40.0" prefWidth="200.0" text="Remover Cliente" />
+                        <TableView fx:id="tableViewCliente" layoutX="-1.0" layoutY="85.0" prefHeight="359.0" prefWidth="788.0">
+                          <columns>
+                            <TableColumn fx:id="tableColumnCodCliente" prefWidth="38.0" text="Cod" />
+                            <TableColumn fx:id="tableColumnNomeCliente" prefWidth="167.0" text="Nome" />
+                              <TableColumn fx:id="tableColumnCpfCliente" prefWidth="124.0" text="CPF" />
+                              <TableColumn fx:id="tableColumnEmailCliente" prefWidth="170.0" text="Email" />
+                              <TableColumn fx:id="tableColumnTelefoneCliente" prefWidth="214.0" text="Telefone" />
+                              <TableColumn fx:id="tableColumnEditCliente" prefWidth="74.0" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableCliente" layoutX="699.0" layoutY="48.0" mnemonicParsing="false" onAction="#onBtnRefreshTableClienteAction" text="Refresh table" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Gerentes">
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="469.0" prefWidth="683.0">
+                     <children>
+                        <Button fx:id="btnAdicionarGerente" layoutX="15.0" layoutY="20.0" mnemonicParsing="false" onAction="#onBtnAdicionarGerenteAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Gerente" />
+                        <Button fx:id="btnRemoverGerente" layoutX="221.0" layoutY="20.0" mnemonicParsing="false" onAction="#onBtnRemoverGerenteAction" prefHeight="40.0" prefWidth="200.0" text="Remover Gerente" />
+                        <TableView fx:id="tableViewGerente" layoutX="-2.0" layoutY="120.0" prefHeight="323.0" prefWidth="790.0">
+                          <columns>
+                            <TableColumn fx:id="tableColumnCodGerente" prefWidth="90.0" text="Cod" />
+                            <TableColumn fx:id="tableColumnNomeGerente" minWidth="0.0" prefWidth="335.0" text="Nome" />
+                              <TableColumn fx:id="tableColumnSenhaGerente" minWidth="0.0" prefWidth="306.0" text="Senha" />
+                              <TableColumn fx:id="tableColumnEditGerente" prefWidth="58.0" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableGerente" layoutX="699.0" layoutY="88.0" mnemonicParsing="false" onAction="#onBtnRefreshTableGerenteAction" text="Refresh table" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Funcionarios">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnAdicionarFuncionario" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBtnAdicionarFuncionarioAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Funcionario" />
+                        <Button fx:id="btnRemoverFuncionario" layoutX="221.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBtnRemoverFuncionarioAction" prefHeight="40.0" prefWidth="200.0" text="Remover Funcionario" />
+                        <TableView fx:id="tableViewFuncionario" layoutX="-2.0" layoutY="101.0" prefHeight="344.0" prefWidth="790.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnCodFuncionario" prefWidth="90.0" text="Cod" />
+                              <TableColumn fx:id="tableColumnNomeFuncionario" minWidth="0.0" prefWidth="335.0" text="Nome" />
+                              <TableColumn fx:id="tableColumnSenhaFuncionario" minWidth="0.0" prefWidth="296.0" text="Senha" />
+                              <TableColumn fx:id="tableColumnEditFuncionario" minWidth="0.0" prefWidth="68.0" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableFuncionario" layoutX="699.0" layoutY="61.0" mnemonicParsing="false" onAction="#onBtnRefreshTableFuncionarioAction" text="Refresh table" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Cardapio">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="441.0" prefWidth="849.0">
+                     <children>
+                        <Button fx:id="btnAddPrato" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtnAddPratoAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Prato" />
+                        <Button fx:id="btnRemoverPrato" layoutX="225.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtnRemoverPratoAction" prefHeight="40.0" prefWidth="200.0" text="Remover Prato" />
+                        <TableView fx:id="tableViewCardapio" layoutX="-2.0" layoutY="101.0" prefHeight="345.0" prefWidth="790.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnCodCardapio" prefWidth="84.0" text="Cod" />
+                              <TableColumn fx:id="tableColumnNomeCardapio" minWidth="0.0" prefWidth="132.0" text="Nome" />
+                              <TableColumn fx:id="tableColumnDescricaoCardapio" minWidth="0.0" prefWidth="179.0" text="Descricao" />
+                              <TableColumn fx:id="tableColumnPrecoCardapio" prefWidth="87.0" text="Preco" />
+                              <TableColumn fx:id="tableColumnCategoriaCardapio" prefWidth="96.0" text="Categoria" />
+                              <TableColumn fx:id="tableColumnProdutosCardapio" prefWidth="151.0" text="Produtos" />
+                              <TableColumn fx:id="tableColumnEditPrato" prefWidth="60.0" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableCardapio" layoutX="699.0" layoutY="67.0" mnemonicParsing="false" onAction="#onBtnRefreshTableCardapioAction" text="Refresh table" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Produtos">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnAddProdutos" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBtnAddProdutosAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Produtos" />
+                        <Button fx:id="btnRemoverProdutos" layoutX="225.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBtnRemoverProdutosAction" prefHeight="40.0" prefWidth="200.0" text="Remover Produtos" />
+                        <TableView fx:id="tableViewProduto" layoutX="-1.0" layoutY="110.0" prefHeight="335.0" prefWidth="788.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnFornecedorProduto" prefWidth="170.0" text="Fornecedor" />
+                              <TableColumn fx:id="tableColumnCodProduto" prefWidth="79.0" text="Cod" />
+                              <TableColumn fx:id="tableColumnNomeProduto" minWidth="0.0" prefWidth="230.0" text="Nome" />
+                              <TableColumn fx:id="tableColumnPrecoProduto" minWidth="0.0" prefWidth="77.0" text="Preco" />
+                              <TableColumn fx:id="tableColumnValidadeProduto" prefWidth="96.0" text="Validade" />
+                              <TableColumn fx:id="tableColumnQuantidadeProduto" prefWidth="83.0" text="Quantidade" />
+                              <TableColumn fx:id="tableColumnEditProduto" prefWidth="48.0" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableProdutos" layoutX="699.0" layoutY="72.0" mnemonicParsing="false" onAction="#onBtnRefreshTableProdutosAction" text="Refresh table" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Fornecedores">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnAddFornecedor" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#onBtnAddFornecedorAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Fornecedor" />
+                        <Button fx:id="btnRemoverFornecedor" layoutX="220.0" layoutY="13.0" mnemonicParsing="false" onAction="#onBtnRemoverFornecedorAction" prefHeight="40.0" prefWidth="200.0" text="Remover Fornecedor" />
+                        <TableView fx:id="tableViewFornecedor" layoutY="107.0" prefHeight="328.0" prefWidth="795.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnCodFornecedor" prefWidth="84.0" text="Cod" />
+                              <TableColumn fx:id="tableColumnNomeFornecedor" minWidth="0.0" prefWidth="224.0" text="Nome" />
+                              <TableColumn fx:id="tableColumnCnpjFornecedor" minWidth="0.0" prefWidth="132.0" text="CNPJ" />
+                              <TableColumn fx:id="tableColumnEnderecoFornecedor" prefWidth="228.0" text="Endereco" />
+                              <TableColumn fx:id="tableColumnProdutosFornecedor" prefWidth="67.0" text="Produtos" />
+                              <TableColumn fx:id="tableColumnEditFornecedor" prefWidth="59.0" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableFornecedor" layoutX="699.0" layoutY="72.0" mnemonicParsing="false" onAction="#onBtnRefreshTableFornecedorAction" text="Refresh table" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Vendas">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnAddVenda" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBtnAddVendaAction" prefHeight="40.0" prefWidth="200.0" text="Adicionar Vendas" />
+                        <Button fx:id="btnRemoverVenda" layoutX="232.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBtnRemoverVendaAction" prefHeight="40.0" prefWidth="200.0" text="Remover Vendas" />
+                        <TableView fx:id="tableViewVenda" layoutX="5.0" layoutY="148.0" prefHeight="279.0" prefWidth="782.0">
+                           <columns>
+                              <TableColumn fx:id="tableColumnCodVenda" prefWidth="106.0" text="Cod" />
+                              <TableColumn fx:id="tableColumnRegistroVenda" minWidth="0.0" prefWidth="263.0" text="Registro" />
+                              <TableColumn fx:id="tableColumnPrecoVenda" minWidth="0.0" prefWidth="132.0" text="Preco Total" />
+                              <TableColumn fx:id="tableColumnPagamentoVenda" prefWidth="137.0" text="Pagamento" />
+                              <TableColumn fx:id="tableColumnEditVenda" prefWidth="57.0" />
+                              <TableColumn fx:id="tableColumnNotaFiscal" minWidth="8.0" prefWidth="86.0" text="Nota Fiscal" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnRefreshTableVenda" layoutX="722.0" layoutY="116.0" mnemonicParsing="false" onAction="#onBtnRefreshTableVendaAction" text="Refresh" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Relatorio">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <MenuButton fx:id="mbRelatorio" layoutX="107.0" layoutY="93.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="510.0" text="Gerar relatorio">
+                          <items>
+                              <MenuItem fx:id="menuItemFGeral" mnemonicParsing="false" onAction="#onMenuItemFGeralAction" text="Fornecedores no geral" />
+                              <MenuItem fx:id="menuItemFPorProduto" mnemonicParsing="false" onAction="#onMenuItemFPorProdutoAction" text="Fornecedores por tipo de produto" />
+                              <MenuItem fx:id="menuItemQtdEstoqueGeral" mnemonicParsing="false" onAction="#onMenuItemQtdEstoqueGeralAction" text="Quantidade de todos os produtos do estoque" />
+                              <MenuItem fx:id="menuItemQtdEstoqueProd" mnemonicParsing="false" onAction="#onMenuItemQtdEstoqueProdAction" text="Quantidade do estoque por produto" />
+                              <MenuItem fx:id="menuItemProdAVencer" mnemonicParsing="false" onAction="#onMenuItemProdAVencerAction" text="Produtos a vencer" />
+                            <MenuItem fx:id="menuItemVendasGeral" mnemonicParsing="false" onAction="#onMenuItemVendasGeralAction" text="Vendas geral" />
+                            <MenuItem fx:id="menuItemVendasPeriodo" mnemonicParsing="false" onAction="#OnMenuItemVendasPeriodoAction" text="Vendas por período" />
+                              <MenuItem fx:id="menuItemVendasPrato" mnemonicParsing="false" onAction="#onMenuItemVendasPratoAction" text="Vendas por prato" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Opções">
+              <content>
+                  <AnchorPane>
+                     <children>
+                        <Button fx:id="btnLogout" layoutX="269.0" layoutY="143.0" mnemonicParsing="false" onAction="#onBtnLogoutAction" prefHeight="158.0" prefWidth="247.0" text="Logout" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </content>
+</ScrollPane>

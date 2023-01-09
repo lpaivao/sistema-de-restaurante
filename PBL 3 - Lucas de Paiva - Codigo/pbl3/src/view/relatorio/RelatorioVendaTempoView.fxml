@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="141.0" prefWidth="416.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controller.relatorio.RelatorioVendaTempoViewController">
+   <children>
+      <DatePicker fx:id="dpData1" layoutX="32.0" layoutY="64.0" />
+      <DatePicker fx:id="dpData2" layoutX="212.0" layoutY="64.0" />
+      <Label layoutX="32.0" layoutY="40.0" text="De:" />
+      <Label layoutX="212.0" layoutY="40.0" text="Até:" />
+      <Label layoutX="32.0" layoutY="14.0" prefHeight="17.0" prefWidth="209.0" text="RELATÓRIO DE VENDAS POR PERÍODO" />
+      <Button fx:id="btnGerarRelatorio" layoutX="32.0" layoutY="99.0" mnemonicParsing="false" onAction="#OnBtnGerarRelatorioAction" prefHeight="25.0" prefWidth="357.0" text="Gerar relatório" />
+   </children>
+</AnchorPane>

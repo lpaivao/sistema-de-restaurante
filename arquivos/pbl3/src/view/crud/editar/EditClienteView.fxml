@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.crud.editar.EditClienteViewController">
+   <children>
+      <AnchorPane prefHeight="305.0" prefWidth="287.0">
+         <children>
+            <Button fx:id="btnAlterar" layoutX="71.0" layoutY="251.0" mnemonicParsing="false" onAction="#onBtnAlterarAction" text="Alterar" />
+            <Button fx:id="btnCancelar" layoutX="156.0" layoutY="251.0" mnemonicParsing="false" onAction="#onBtnCancelarAction" text="Cancelar" />
+            <Label layoutX="11.0" layoutY="14.0" prefHeight="17.0" prefWidth="265.0" text="Digite os dados que deseja alterar:" />
+            <TextField fx:id="txtNome" layoutX="71.0" layoutY="80.0" />
+            <Label layoutX="10.0" layoutY="84.0" prefHeight="17.0" prefWidth="42.0" text="Nome:" />
+            <Label layoutX="10.0" layoutY="126.0" prefHeight="17.0" prefWidth="42.0" text="CPF:" />
+            <TextField fx:id="txtCpf" layoutX="71.0" layoutY="122.0" promptText="Ex: 10.0" />
+            <TextField fx:id="txtEmail" layoutX="71.0" layoutY="165.0" />
+            <Label layoutX="10.0" layoutY="169.0" prefHeight="17.0" prefWidth="42.0" text="Email:" />
+            <Label layoutX="10.0" layoutY="212.0" prefHeight="17.0" prefWidth="52.0" text="Telefone:" />
+            <Label fx:id="lbAviso" layoutX="71.0" layoutY="283.0" prefHeight="17.0" prefWidth="208.0" textFill="RED" />
+            <Label layoutX="10.0" layoutY="43.0" prefHeight="17.0" prefWidth="42.0" text="Código:" />
+            <Label fx:id="lbCod" layoutX="69.0" layoutY="43.0" prefHeight="17.0" prefWidth="149.0" />
+            <TextField fx:id="txtTelefone" layoutX="71.0" layoutY="208.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

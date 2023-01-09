@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="249.0" prefWidth="264.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.crud.adicionar.AddClienteViewController">
+   <children>
+      <Label layoutX="23.0" layoutY="79.0" text="CPF:" />
+      <TextField fx:id="txtCpf" layoutX="89.0" layoutY="75.0" />
+      <Label layoutX="19.0" layoutY="115.0" text="Email:" />
+      <TextField fx:id="txtEmail" layoutX="89.0" layoutY="111.0" />
+      <Button fx:id="btnAdicionar" layoutX="89.0" layoutY="190.0" mnemonicParsing="false" onAction="#onBtnAdicionarAction" text="Adicionar" />
+      <Button fx:id="btnCancelar" layoutX="176.0" layoutY="190.0" mnemonicParsing="false" onAction="#onBtnCancelarAction" text="Cancelar" />
+      <Label layoutX="23.0" layoutY="44.0" text="Nome:" />
+      <TextField fx:id="txtNome" layoutX="89.0" layoutY="40.0" />
+      <Label layoutX="19.0" layoutY="14.0" text="Digite os dados do cliente:" />
+      <Label fx:id="txtAvisoCampoVazio" layoutX="14.0" layoutY="224.0" prefHeight="17.0" prefWidth="250.0" textFill="RED" />
+      <Label layoutX="10.0" layoutY="156.0" text="Telefone:" />
+      <TextField fx:id="txtTelefone" layoutX="89.0" layoutY="152.0" />
+   </children>
+</AnchorPane>

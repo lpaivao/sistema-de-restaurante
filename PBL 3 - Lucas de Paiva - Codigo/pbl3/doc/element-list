@@ -1,0 +1,14 @@
+application
+controller.crud.adicionar
+controller.crud.editar
+controller.crud.remover
+controller.funcionario
+controller.gerente
+controller.login
+controller.relatorio
+controller.ver.tables
+model.entidades
+model.gerenciamento
+model.terminal
+testes
+utils

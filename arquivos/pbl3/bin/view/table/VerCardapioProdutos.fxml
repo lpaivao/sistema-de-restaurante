@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ver.tables.VerCardapioProdutosController">
+   <children>
+      <TableView fx:id="tbProdutos" prefHeight="160.0" prefWidth="273.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNomeProduto" prefWidth="185.0" text="Nome" />
+          <TableColumn fx:id="tableColumnQuantidadeProduto" minWidth="0.0" prefWidth="87.0" text="Quantidade" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

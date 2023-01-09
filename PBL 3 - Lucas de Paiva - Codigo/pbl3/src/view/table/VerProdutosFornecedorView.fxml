@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ver.tables.VerProdutosFornecedorViewController">
+   <children>
+      <TableView fx:id="tableViewProduto" prefHeight="279.0" prefWidth="405.0">
+         <columns>
+            <TableColumn fx:id="tableColumnNomeProduto" minWidth="0.0" prefWidth="132.0" text="Nome" />
+            <TableColumn fx:id="tableColumnPrecoProduto" minWidth="0.0" prefWidth="91.0" text="Preco" />
+            <TableColumn fx:id="tableColumnValidadeProduto" text="Validade" />
+            <TableColumn fx:id="tableColumnQuantidadeProduto" prefWidth="102.0" text="Quantidade" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
